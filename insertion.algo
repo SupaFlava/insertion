@@ -2,11 +2,12 @@ ALGORITHM insertion
 VAR
     arr : ARRAY_OF INTEGER[length];
 BEGIN
-    FOR i FROM 1 TO arr length step ++ DO
+    FOR i FROM 1 TO arr length step i ++ DO
         VAR currentVal = arr[i];
-        FOR j FROM i -1  TO j >= 0 step  -- DO
-            arr[j] currentVal
+        FOR j FROM i -1  TO j >= 0 && arr[j] > cuurentVal ; step  j-- DO
+            arr[j+1] = arr[j]
         END_FOR
+        arr[j+1] = cuurentVal;
     END_FOR
     return arr;
 END
