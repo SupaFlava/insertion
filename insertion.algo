@@ -1,0 +1,12 @@
+ALGORITHM insertion
+VAR
+    arr : ARRAY_OF INTEGER[length];
+BEGIN
+    FOR i FROM 1 TO arr length step ++ DO
+        VAR currentVal = arr[i];
+        FOR j FROM i -1  TO j >= 0 step  -- DO
+            arr[j] currentVal
+        END_FOR
+    END_FOR
+    return arr;
+END
